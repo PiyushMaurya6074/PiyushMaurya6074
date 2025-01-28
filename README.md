@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @PiyushMaurya6074
+- 👋 Hi, I’m @PiyushMaurya
 - 👀 I’m interested in Artificial Intelligence, Machine Learning, and Data Science.
 - 🌱 I’m currently learning DSA and basic AI/ML techniques and recently completed a certification with Simplilearn.
 - 💞️ I’m looking to collaborate on AI/ML projects, research, and innovative data-driven solutions.
