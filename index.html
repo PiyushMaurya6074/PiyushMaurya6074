@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piyush Maurya — AI/ML Engineer & Developer</title>
+  <meta name="description" content="Portfolio of Piyush Maurya — B.Tech CSE (AI/ML) student, DRDO intern, and tech innovator building intelligent solutions." />
+  <meta name="keywords" content="Piyush Maurya, AI/ML, Machine Learning, Python, FastAPI, React, DRDO, Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">PM</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:Piyushmaurya6074@gmail.com" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO — canyon/mountain dark blue background with left-aligned text -->
+  <section id="hero">
+    <!-- Canyon scene built entirely in CSS + SVG layers -->
+    <div class="hero-bg">
+      <div class="hero-bg-sky"></div>
+      <div class="hero-bg-mountain hero-bg-ml"></div>
+      <div class="hero-bg-mountain hero-bg-mr"></div>
+      <div class="hero-bg-canyon-left"></div>
+      <div class="hero-bg-canyon-right"></div>
+      <div class="hero-bg-ground"></div>
+      <div class="hero-bg-figure">
+        <!-- silhouette man SVG -->
+        <svg viewBox="0 0 60 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="silhouette-svg">
+          <ellipse cx="30" cy="12" rx="9" ry="9" fill="#0a0e1a"/>
+          <path d="M18 35 Q20 22 30 20 Q40 22 42 35 L44 65 H16 Z" fill="#0a0e1a"/>
+          <path d="M16 65 L10 100 Q9 104 13 104 Q17 104 18 100 L22 72 L26 100 Q26 104 30 104 Q34 104 34 100 L38 72 L42 100 Q43 104 47 104 Q51 104 50 100 L44 65 Z" fill="#0a0e1a"/>
+          <path d="M18 36 L8 58 Q6 62 10 63 Q14 64 16 60 L26 42 Z" fill="#0a0e1a"/>
+          <path d="M42 36 L52 58 Q54 62 50 63 Q46 64 44 60 L34 42 Z" fill="#0a0e1a"/>
+        </svg>
+      </div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Overlay gradient so text is legible -->
+    <div class="hero-overlay"></div>
+
+    <!-- Top bar -->
+    <div class="hero-topbar">
+      <span class="hero-name-top">Piyush Maurya</span>
+      <div class="hero-topbar-links">
+        <a href="https://linkedin.com/in/piyush-maurya/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/piyushmaurya6074" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- LEFT-ALIGNED content like the Digital Edge reference -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">WELCOME TO MY PORTFOLIO</p>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="word" data-delay="0">Building</span>
+        <br/>
+        <span class="word accent-word" data-delay="100">Intelligent</span>
+        <br/>
+        <span class="word" data-delay="200">Solutions.</span>
+      </h1>
+      <p class="hero-desc">B.Tech CSE (AI/ML) · DRDO Project Intern · National Award Winner.<br/>
+      From secure defence-grade systems to NLP-powered Chrome extensions.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+      <!-- Social pills on left -->
+      <div class="hero-social-row">
+        <a href="https://linkedin.com/in/piyush-maurya/" target="_blank" class="hero-social-link">in</a>
+        <a href="https://github.com/piyushmaurya6074" target="_blank" class="hero-social-link">gh</a>
+        <a href="mailto:Piyushmaurya6074@gmail.com" class="hero-social-link">@</a>
+      </div>
+    </div>
+
+    <!-- No ghost in hero -->
+
+    <div class="hero-stats-bar">
+      <div class="stat-item">
+        <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Major Projects</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="6">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Total Projects</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="1">0</span>
+        <span class="stat-label">Award Win</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span><span>ABOUT</span><span class="label-line"></span>
+      </div>
+      <div class="about-grid about-grid-3col">
+
+        <!-- Photo column -->
+        <div class="about-photo-col">
+          <div class="about-photo-wrap">
+            <div class="about-photo-ring">
+              <img src="assets/profile.jpeg" alt="Piyush Maurya" class="about-photo" />
+            </div>
+            <div class="about-photo-tag">
+              <span class="badge-dot"></span> DRDO Intern
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h2 class="section-title">My Journey</h2>
+          <p class="about-para">B.Tech CSE (AI/ML) student with hands-on experience in Python development, machine learning, and applied data analysis. Currently interning at <span class="highlight">ADRDE-DRDO</span> building a secure LAN communication system using FastAPI, React.js, WebSocket, and Tauri 2.x with end-to-end encryption.</p>
+          <p class="about-para">Recognised for leadership and problem-solving, having secured <span class="highlight">1st place at the ISTE National Convention</span>. I'm driven by the belief that AI/ML should solve real, meaningful problems — not just look good on paper.</p>
+          <div class="about-links">
+            <a href="https://linkedin.com/in/piyush-maurya/" target="_blank" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/piyushmaurya6074" target="_blank" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:Piyushmaurya6074@gmail.com" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+
+        <div class="about-timeline">
+          <div class="timeline-item" data-aos>
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">2023</span>
+              <h4>B.Tech CSE (AI/ML) Begins</h4>
+              <p>Joined Lamrin Tech Skills University, Punjab — specialising in AI/ML</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos>
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">Jan–Feb 2026</span>
+              <h4>First Internship</h4>
+              <p>Data Analysis intern at Saiket Systems — built a churn prediction model on 5,000+ records</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos>
+            <div class="tl-dot active"></div>
+            <div class="tl-body">
+              <span class="tl-date">Feb 2025</span>
+              <h4>National Recognition</h4>
+              <p>Won 1st Place at ISTE National Convention for EcoBins — judged on Leadership & Problem Solving</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos>
+            <div class="tl-dot active"></div>
+            <div class="tl-body">
+              <span class="tl-date">Feb 2026 – Present</span>
+              <h4>DRDO Internship</h4>
+              <p>Building a 5-layer end-to-end encrypted LAN messenger for defence networks at ADRDE, Agra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span><span>EXPERIENCE</span><span class="label-line"></span>
+      </div>
+      <h2 class="section-title center">Where I've Worked</h2>
+      <div class="exp-grid">
+        <div class="exp-card featured" data-aos>
+          <div class="exp-header">
+            <div class="exp-org-badge drdo-b">
+              <img src="assets/drdo.webp" alt="DRDO" style="width:100%;height:100%;object-fit:contain;border-radius:8px;padding:3px;" />
+            </div>
+            <div class="exp-meta">
+              <span class="exp-status active">● Active</span>
+              <span class="exp-date">Feb 2026 – Present</span>
+            </div>
+          </div>
+          <h3 class="exp-role">Project Intern</h3>
+          <p class="exp-org-name">Aerial Delivery Research &amp; Development Establishment (ADRDE) · DRDO</p>
+          <ul class="exp-points">
+            <li>Developed a secure <strong>LAN Messenger desktop application</strong> using FastAPI, WebSocket, React.js 18, and Tauri 2.x for real-time encrypted communication in a Defence network environment</li>
+            <li>Implemented <strong>5-layer end-to-end security stack</strong> — Fernet encryption, Argon2id password hashing, JWT authentication, and SSL/TLS protocols</li>
+          </ul>
+          <div class="exp-tags">
+            <span>FastAPI</span><span>React.js 18</span><span>Tauri 2.x</span><span>WebSocket</span><span>Fernet</span><span>JWT</span><span>SSL/TLS</span>
+          </div>
+        </div>
+        <div class="exp-card" data-aos>
+          <div class="exp-header">
+            <div class="exp-org-badge saiket-b">
+              <img src="assets/saiket.png" alt="Saiket Systems" style="width:100%;height:100%;object-fit:contain;border-radius:8px;padding:2px;" />
+            </div>
+            <div class="exp-meta">
+              <span class="exp-status done">✓ Completed</span>
+              <span class="exp-date">Jan 2026 – Feb 2026</span>
+            </div>
+          </div>
+          <h3 class="exp-role">Intern – Data Analysis</h3>
+          <p class="exp-org-name">Saiket Systems · Virtual Internship</p>
+          <ul class="exp-points">
+            <li>Built a <strong>Customer Churn prediction model</strong> using Python, Scikit-learn, and Pandas on 5,000+ customer records to identify retention patterns</li>
+            <li>Applied feature engineering improving churn prediction accuracy by <strong>15%</strong> using Matplotlib and Seaborn</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS — curved top section like reference image 2 -->
+  <section id="skills" class="section skills-curved-section">
+    <!-- Curved top edge -->
+    <div class="skills-curve-top">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,80 C360,0 1080,0 1440,80 L1440,0 L0,0 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span><span>SKILLS</span><span class="label-line"></span>
+      </div>
+      <h2 class="section-title center">Technical Arsenal</h2>
+    </div>
+
+    <!-- Row 1 — scroll left, icon + name pills -->
+    <div class="marquee-outer">
+      <div class="marquee-inner" id="row1">
+        <div class="mq-pill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="mq-pill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="mq-pill"><i class="devicon-react-original colored"></i><span>React.js</span></div>
+        <div class="mq-pill"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+        <div class="mq-pill"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="mq-pill"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+        <div class="mq-pill"><i class="devicon-jupyter-plain colored"></i><span>Jupyter</span></div>
+        <div class="mq-pill"><i class="devicon-numpy-plain colored"></i><span>NumPy</span></div>
+        <div class="mq-pill"><i class="devicon-pandas-plain colored"></i><span>Pandas</span></div>
+        <div class="mq-pill"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+        <div class="mq-pill"><i class="devicon-vercel-plain"></i><span>Vercel</span></div>
+        <div class="mq-pill"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+        <!-- duplicate set for seamless loop -->
+        <div class="mq-pill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="mq-pill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="mq-pill"><i class="devicon-react-original colored"></i><span>React.js</span></div>
+        <div class="mq-pill"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+        <div class="mq-pill"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="mq-pill"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+        <div class="mq-pill"><i class="devicon-jupyter-plain colored"></i><span>Jupyter</span></div>
+        <div class="mq-pill"><i class="devicon-numpy-plain colored"></i><span>NumPy</span></div>
+        <div class="mq-pill"><i class="devicon-pandas-plain colored"></i><span>Pandas</span></div>
+        <div class="mq-pill"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+        <div class="mq-pill"><i class="devicon-vercel-plain"></i><span>Vercel</span></div>
+        <div class="mq-pill"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+      </div>
+    </div>
+
+    <!-- Row 2 — reverse -->
+    <div class="marquee-outer reverse">
+      <div class="marquee-inner" id="row2">
+        <div class="mq-pill"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+        <div class="mq-pill"><i class="devicon-scikitlearn-plain colored"></i><span>Scikit-learn</span></div>
+        <div class="mq-pill"><i class="devicon-matplotlib-plain colored"></i><span>Matplotlib</span></div>
+        <div class="mq-pill"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+        <div class="mq-pill"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+        <div class="mq-pill"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+        <div class="mq-pill"><i class="devicon-postgresql-plain colored"></i><span>SQL</span></div>
+        <div class="mq-pill"><i class="devicon-rust-plain colored"></i><span>Tauri/Rust</span></div>
+        <div class="mq-pill">
+          <svg class="mq-custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          <span>Data Analysis</span>
+        </div>
+        <div class="mq-pill">
+          <svg class="mq-custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+          <span>NLP</span>
+        </div>
+        <div class="mq-pill">
+          <svg class="mq-custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          <span>Machine Learning</span>
+        </div>
+        <div class="mq-pill">
+          <svg class="mq-custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>Prompt Engineering</span>
+        </div>
+        <!-- duplicate -->
+        <div class="mq-pill"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+        <div class="mq-pill"><i class="devicon-scikitlearn-plain colored"></i><span>Scikit-learn</span></div>
+        <div class="mq-pill"><i class="devicon-matplotlib-plain colored"></i><span>Matplotlib</span></div>
+        <div class="mq-pill"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+        <div class="mq-pill"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+        <div class="mq-pill"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+        <div class="mq-pill"><i class="devicon-postgresql-plain colored"></i><span>SQL</span></div>
+        <div class="mq-pill"><i class="devicon-rust-plain colored"></i><span>Tauri/Rust</span></div>
+        <div class="mq-pill">
+          <svg class="mq-custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          <span>Data Analysis</span>
+        </div>
+        <div class="mq-pill">
+          <svg class="mq-custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+          <span>NLP</span>
+        </div>
+        <div class="mq-pill">
+          <svg class="mq-custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          <span>Machine Learning</span>
+        </div>
+        <div class="mq-pill">
+          <svg class="mq-custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>Prompt Engineering</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="skill-cats">
+        <div class="skill-cat" data-aos>
+          <h4>Languages</h4>
+          <div class="skill-pills"><span>Python</span><span>JavaScript</span><span>SQL</span></div>
+        </div>
+        <div class="skill-cat" data-aos>
+          <h4>Frameworks</h4>
+          <div class="skill-pills"><span>FastAPI</span><span>React.js</span><span>Tauri 2.x</span><span>Scikit-learn</span></div>
+        </div>
+        <div class="skill-cat" data-aos>
+          <h4>Libraries</h4>
+          <div class="skill-pills"><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div>
+        </div>
+        <div class="skill-cat" data-aos>
+          <h4>Tools &amp; Domains</h4>
+          <div class="skill-pills"><span>Git/GitHub</span><span>Jupyter</span><span>Vercel</span><span>NLP</span><span>ML</span><span>Prompt Eng.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Curved bottom edge -->
+    <div class="skills-curve-bottom">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 C360,80 1080,80 1440,0 L1440,80 L0,80 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span><span>PROJECTS</span><span class="label-line"></span>
+      </div>
+      <h2 class="section-title center">What I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured-proj" data-aos>
+          <div class="proj-header">
+            <div class="proj-badges">
+              <span class="proj-badge shield-badge">🛡️ Defence</span>
+              <span class="proj-badge green-badge">● Active</span>
+            </div>
+            <a href="https://github.com/piyushmaurya6074" target="_blank" class="proj-link-icon" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <h3 class="proj-title">Secure LAN Messenger</h3>
+          <p class="proj-sub">DRDO – Encrypted Defence Communication</p>
+          <p class="proj-desc">Desktop application built for ADRDE-DRDO enabling encrypted real-time messaging over LAN in a secured defence environment — with a 5-layer security architecture built from scratch.</p>
+          <div class="proj-highlights">
+            <span class="ph-chip">🔐 5-Layer Security</span>
+            <span class="ph-chip">⚡ Real-time WebSocket</span>
+            <span class="ph-chip">🖥️ Tauri Desktop App</span>
+          </div>
+          <div class="proj-tech"><span>FastAPI</span><span>React.js 18</span><span>Tauri 2.x</span><span>WebSocket</span><span>Fernet</span><span>Argon2id</span><span>JWT</span></div>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="proj-header">
+            <div class="proj-badges">
+              <span class="proj-badge purple-badge">🧠 NLP</span>
+              <span class="proj-badge grey-badge">Sept 2025</span>
+            </div>
+          </div>
+          <h3 class="proj-title">Terms &amp; Conditions Analyzer</h3>
+          <p class="proj-desc">NLP-powered Chrome extension and web platform for analysing T&amp;C documents via text, file, image, and screen input. Integrates OCR and risk-detection to flag important clauses.</p>
+          <div class="proj-tech"><span>Python</span><span>NLP</span><span>OCR</span><span>Chrome Extension</span></div>
+        </div>
+
+        <div class="project-card award-proj" data-aos>
+          <div class="proj-header">
+            <div class="proj-badges">
+              <span class="proj-badge gold-badge">🥇 Award Winner</span>
+              <span class="proj-badge grey-badge">2025</span>
+            </div>
+          </div>
+          <h3 class="proj-title">EcoBins</h3>
+          <p class="proj-sub">Smart Waste Management Concept</p>
+          <p class="proj-desc">Smart waste management solution with IoT-driven automatic segregation and a user reward system for correct disposal. Won <strong>1st Prize at ISTE National Convention</strong>.</p>
+          <div class="proj-tech"><span>IoT Sensors</span><span>System Design</span><span>Business Model</span><span>Mobile App</span></div>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="proj-header">
+            <div class="proj-badges">
+              <span class="proj-badge teal-badge">💰 Fintech</span>
+              <span class="proj-badge grey-badge">Mar 2024</span>
+            </div>
+          </div>
+          <h3 class="proj-title">ViewPay</h3>
+          <p class="proj-sub">Revenue-Generating Web Platform</p>
+          <p class="proj-desc">Ad-to-cash monetisation platform deployed on Vercel. Rewards users for watching ads with a personalised dashboard, referral program, and email verification system.</p>
+          <div class="proj-tech"><span>React.js</span><span>Firebase</span><span>AdSense</span><span>Vercel</span></div>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="proj-header">
+            <div class="proj-badges">
+              <span class="proj-badge green-badge">🌿 EnvTech</span>
+              <span class="proj-badge green-badge">● Live</span>
+            </div>
+          </div>
+          <h3 class="proj-title">Air Quality Analyzer</h3>
+          <p class="proj-desc">Interactive tool for real-time AQI measurement and visualisation. Features color-coded health zones, city-wise comparisons, and health advisory based on pollution levels.</p>
+          <div class="proj-tech"><span>Python</span><span>Chart.js</span><span>API Integration</span><span>React</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="achievements-layout">
+
+        <!-- Left column -->
+        <div class="ach-left">
+          <div class="ach-tag-pill">Awards &amp; Recognition</div>
+          <h2 class="section-title">Milestones that<br/>actually mean something</h2>
+          <p class="ach-desc">Not just participation — real recognition for building things that work. Each of these pushed me to think beyond the classroom.</p>
+
+          <div class="awards-list">
+
+            <div class="award-row active-row" data-aos>
+              <div class="award-thumb iste-t">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 3L19.6 10.4L28 11.6L22 17.4L23.4 26L16 22.1L8.6 26L10 17.4L4 11.6L12.4 10.4L16 3Z" fill="#f0b429" stroke="#f0b429" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="award-info">
+                <h4>ISTE National Convention — <span class="gold-text">1st Place</span></h4>
+                <p>Leadership &amp; Problem Solving · EcoBins Project · Feb 2025</p>
+              </div>
+            </div>
+
+            <div class="award-row" data-aos>
+              <div class="award-thumb hack-t">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 6v4M16 22v4M6 16H2M30 16h-4M8.93 8.93l-2.83-2.83M25.9 25.9l-2.83-2.83M25.9 8.93l2.83-2.83M8.93 25.9l-2.83 2.83" stroke="#9d8cff" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="16" cy="16" r="6" stroke="#9d8cff" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="award-info">
+                <h4>Zero to One Hackathon</h4>
+                <p>Chandigarh University · Participated</p>
+              </div>
+            </div>
+
+            <div class="award-row" data-aos>
+              <div class="award-thumb iit-t">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="10" width="24" height="14" rx="3" stroke="#4eb8ff" stroke-width="2"/>
+                  <path d="M10 10V8a6 6 0 0112 0v2" stroke="#4eb8ff" stroke-width="2"/>
+                  <circle cx="16" cy="17" r="3" fill="#4eb8ff"/>
+                </svg>
+              </div>
+              <div class="award-info">
+                <h4>AI &amp; ML Workshop — TRYST, IIT Delhi</h4>
+                <p>Workshop on Artificial Intelligence &amp; Machine Learning</p>
+              </div>
+            </div>
+
+            <div class="award-row" data-aos>
+              <div class="award-thumb ms-t">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="4" width="11" height="11" rx="1.5" fill="#f25022"/>
+                  <rect x="17" y="4" width="11" height="11" rx="1.5" fill="#7fba00"/>
+                  <rect x="4" y="17" width="11" height="11" rx="1.5" fill="#00a4ef"/>
+                  <rect x="17" y="17" width="11" height="11" rx="1.5" fill="#ffb900"/>
+                </svg>
+              </div>
+              <div class="award-info">
+                <h4>TechSangam 2.0 – Tech4Hack</h4>
+                <p>Microsoft Campus · Participated</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right column — floating ghost-style trophy -->
+        <div class="ach-right">
+          <div class="trophy-frame">
+            <div class="trophy-scene">
+              <div class="trophy-ghost-wrap" id="trophyGhostWrap">
+                <div class="trophy-ghost-bubble" id="trophyBubble">1st Place! 🏆</div>
+                <svg class="trophy-svg" viewBox="0 0 220 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="gB" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5e27a"/><stop offset="40%" stop-color="#d4a017"/><stop offset="70%" stop-color="#8b6000"/><stop offset="100%" stop-color="#c8960c"/></linearGradient>
+                    <linearGradient id="gS" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fff9c4" stop-opacity="0.5"/><stop offset="100%" stop-color="#d4a017" stop-opacity="0"/></linearGradient>
+                    <linearGradient id="gBase" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4a017"/><stop offset="100%" stop-color="#7a5200"/></linearGradient>
+                    <linearGradient id="hL" x1="1" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f5c842"/><stop offset="100%" stop-color="#8b6000"/></linearGradient>
+                    <linearGradient id="hR" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5c842"/><stop offset="100%" stop-color="#8b6000"/></linearGradient>
+                  </defs>
+                  <path d="M72,55 Q36,60 36,88 Q36,118 72,120" stroke="url(#hL)" stroke-width="10" stroke-linecap="round" fill="none"/>
+                  <path d="M148,55 Q184,60 184,88 Q184,118 148,120" stroke="url(#hR)" stroke-width="10" stroke-linecap="round" fill="none"/>
+                  <path d="M68,28 L72,148 Q80,172 110,178 Q140,172 148,148 L152,28 Z" fill="url(#gB)" stroke="#c8960c" stroke-width="1.5"/>
+                  <path d="M80,28 L83,140 Q88,160 100,166" stroke="url(#gS)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.5"/>
+                  <rect x="64" y="24" width="92" height="12" rx="6" fill="url(#gBase)"/>
+                  <path d="M110,80 L114,92 L127,92 L117,100 L121,112 L110,104 L99,112 L103,100 L93,92 L106,92 Z" fill="#fff8dc" opacity="0.5"/>
+                  <rect x="98" y="178" width="24" height="10" rx="4" fill="url(#gBase)"/>
+                  <rect x="102" y="188" width="16" height="36" rx="3" fill="url(#gBase)"/>
+                  <rect x="94" y="218" width="32" height="10" rx="5" fill="url(#gBase)"/>
+                  <rect x="78" y="228" width="64" height="14" rx="5" fill="url(#gBase)"/>
+                  <rect x="68" y="242" width="84" height="16" rx="6" fill="url(#gBase)"/>
+                  <path d="M110,10 L112,17 L119,17 L113,22 L115,29 L110,24 L105,29 L107,22 L101,17 L108,17 Z" fill="#fff8dc" opacity="0.8"/>
+                </svg>
+                <p class="trophy-ghost-label">Click the trophy!</p>
+              </div>
+            </div>
+            <div class="trophy-overlay-text">
+              <span class="trophy-rank">🥇 1st Place</span>
+              <span class="trophy-event">ISTE National Convention</span>
+              <span class="trophy-detail">Leadership &amp; Problem Solving</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-1">
+            <span class="fb-icon"><svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" fill="#f0b429"/></svg></span>
+            <div class="fb-text"><div class="fb-num">1st</div><div class="fb-label">National Award</div></div>
+          </div>
+          <div class="floating-badge badge-2">
+            <span class="fb-icon">🛡️</span>
+            <div class="fb-text"><div class="fb-num">DRDO</div><div class="fb-label">Defence Intern</div></div>
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS — 3D coverflow carousel -->
+  <section id="certifications" class="section section-dark">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span><span>CERTIFICATIONS</span><span class="label-line"></span>
+      </div>
+      <h2 class="section-title center">Credentials &amp; Certificates</h2>
+      <p class="certs-sub">8 certifications from leading organisations</p>
+    </div>
+    <div class="cert-cf-stage" id="certStage">
+      <div class="cert-cf-card" data-ci="0"><div class="cert-cf-logo iste-cf">
+        <!-- ISTE logo SVG -->
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="20" fill="#78350f"/><text x="20" y="26" text-anchor="middle" font-size="10" font-weight="900" fill="#fbbf24" font-family="Arial">ISTE</text></svg>
+      </div><h3 class="cert-cf-title">ISTE Ideathon &amp; Problem-solving</h3><p class="cert-cf-issuer">ISTE_KKWIEER</p><p class="cert-cf-date">Feb 2025</p><div class="cert-cf-skills">Problem Solving · Leadership</div></div>
+
+      <div class="cert-cf-card" data-ci="1"><div class="cert-cf-logo hp-cf">
+        <!-- HP logo -->
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="20" fill="#0096d6"/><text x="20" y="26" text-anchor="middle" font-size="14" font-weight="900" fill="#fff" font-family="Arial">hp</text></svg>
+      </div><h3 class="cert-cf-title">Data Science &amp; Analytics</h3><p class="cert-cf-issuer">HP LIFE</p><p class="cert-cf-date">Nov 2024</p><div class="cert-cf-skills">Data Analysis · Data Science</div></div>
+
+      <div class="cert-cf-card" data-ci="2"><div class="cert-cf-logo hp-cf">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="20" fill="#0096d6"/><text x="20" y="26" text-anchor="middle" font-size="14" font-weight="900" fill="#fff" font-family="Arial">hp</text></svg>
+      </div><h3 class="cert-cf-title">Agile Project Management</h3><p class="cert-cf-issuer">HP LIFE</p><p class="cert-cf-date">Nov 2024</p><div class="cert-cf-skills">Agile · Project Management</div></div>
+
+      <div class="cert-cf-card" data-ci="3"><div class="cert-cf-logo aws-cf">
+        <!-- AWS logo -->
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="20" fill="#232f3e"/><path d="M11 22c2.5 1.8 5.5 2.8 9 2.8s6.5-1 9-2.8" stroke="#ff9900" stroke-width="2" stroke-linecap="round" fill="none"/><text x="20" y="19" text-anchor="middle" font-size="7.5" font-weight="900" fill="#ff9900" font-family="Arial">aws</text></svg>
+      </div><h3 class="cert-cf-title">AWS Solutions Architecture Simulation</h3><p class="cert-cf-issuer">Amazon Web Services</p><p class="cert-cf-date">Dec 2025</p><div class="cert-cf-skills">Cloud Architecture · AWS</div></div>
+
+      <div class="cert-cf-card" data-ci="4"><div class="cert-cf-logo del-cf">
+        <!-- Deloitte logo -->
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="20" fill="#86bc25"/><text x="20" y="27" text-anchor="middle" font-size="22" font-weight="900" fill="#fff" font-family="Arial">D.</text></svg>
+      </div><h3 class="cert-cf-title">Deloitte Data Analytics Simulation</h3><p class="cert-cf-issuer">Deloitte · Forage</p><p class="cert-cf-date">Dec 2025</p><div class="cert-cf-skills">Data Visualization · Analytics</div></div>
+
+      <div class="cert-cf-card" data-ci="5"><div class="cert-cf-logo gl-cf">
+        <!-- Great Learning logo -->
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="20" fill="#1a237e"/><text x="20" y="22" text-anchor="middle" font-size="8" font-weight="900" fill="#fff" font-family="Arial">Great</text><text x="20" y="31" text-anchor="middle" font-size="8" font-weight="900" fill="#4fc3f7" font-family="Arial">Learning</text></svg>
+      </div><h3 class="cert-cf-title">Data Visualization using Tableau</h3><p class="cert-cf-issuer">Great Learning</p><p class="cert-cf-date">Dec 2024</p><div class="cert-cf-skills">Tableau · Visualization</div></div>
+
+      <div class="cert-cf-card" data-ci="6"><div class="cert-cf-logo iste-cf">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="20" fill="#78350f"/><text x="20" y="26" text-anchor="middle" font-size="10" font-weight="900" fill="#fbbf24" font-family="Arial">ISTE</text></svg>
+      </div><h3 class="cert-cf-title">Winner — Sustainable Dev Business Model</h3><p class="cert-cf-issuer">ISTE_KKWIEER</p><p class="cert-cf-date">Feb 2025</p><div class="cert-cf-skills">Business Dev · Presentation</div></div>
+
+      <div class="cert-cf-card" data-ci="7"><div class="cert-cf-logo iit-cf">
+        <!-- IIT Delhi / TRYST logo -->
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="20" fill="#b91c1c"/><text x="20" y="19" text-anchor="middle" font-size="8" font-weight="900" fill="#fff" font-family="Arial">TRYST</text><text x="20" y="30" text-anchor="middle" font-size="7" font-weight="700" fill="#fca5a5" font-family="Arial">IIT Delhi</text></svg>
+      </div><h3 class="cert-cf-title">AI &amp; ML Technical Workshop</h3><p class="cert-cf-issuer">TRYST, IIT Delhi</p><p class="cert-cf-date">Apr 2024</p><div class="cert-cf-skills">Neural Networks · AI · ML</div></div>
+    </div>
+    <div class="cert-cf-nav">
+      <button class="cert-cf-btn" id="certPrev">&#8592;</button>
+      <div class="cert-cf-dots" id="certDots"></div>
+      <button class="cert-cf-btn" id="certNext">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span><span>EDUCATION</span><span class="label-line"></span>
+      </div>
+      <h2 class="section-title center">Academic Background</h2>
+      <div class="edu-grid">
+        <div class="edu-card" data-aos>
+          <span class="edu-year">2023 – 2027</span>
+          <h3>B.Tech in CSE (AI/ML)</h3>
+          <p>Lamrin Tech Skills University, Punjab</p>
+          <span class="edu-badge">● Current</span>
+        </div>
+        <div class="edu-card" data-aos>
+          <span class="edu-year">2022</span>
+          <h3>Senior Secondary Education</h3>
+          <p>Simpkins School</p>
+          <span class="edu-badge done-badge">✓ Completed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span><span>CONTACT</span><span class="label-line"></span>
+      </div>
+      <h2 class="section-title center">Let's Work Together</h2>
+      <p class="contact-sub">Open to internships, collaborations, AI/ML projects, and exciting startup opportunities.</p>
+      <div class="contact-cards">
+        <a href="mailto:Piyushmaurya6074@gmail.com" class="contact-card" data-aos>
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          </div>
+          <h4>Email</h4>
+          <p>Piyushmaurya6074@gmail.com</p>
+        </a>
+        <a href="https://linkedin.com/in/piyush-maurya/" target="_blank" class="contact-card" data-aos>
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <h4>LinkedIn</h4>
+          <p>linkedin.com/in/piyush-maurya/</p>
+        </a>
+        <a href="https://github.com/piyushmaurya6074" target="_blank" class="contact-card" data-aos>
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <h4>GitHub</h4>
+          <p>github.com/piyushmaurya6074</p>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:48px;">
+        <a href="https://linkedin.com/in/piyush-maurya/" target="_blank" class="btn-primary">Connect with Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER — signature + stats block like reference image 4 -->
+  <footer id="footer">
+    <!-- Signature — exact uploaded image -->
+    <div class="footer-signature">
+      <img src="assets/Screenshot 2026-06-12 210142.png" alt="Piyush Signature" class="sig-img" />
+    </div>
+
+    <!-- Vertical line divider -->
+    <div class="footer-divider-line"></div>
+
+    <!-- Stats block -->
+    <div class="footer-stats-block">
+      <div class="footer-stat">
+        <span class="fstat-num">4+</span>
+        <span class="fstat-label">MAJOR PROJECTS</span>
+      </div>
+      <div class="footer-stat">
+        <span class="fstat-num">6+</span>
+        <span class="fstat-label">TOTAL PROJECTS</span>
+      </div>
+      <div class="footer-stat">
+        <span class="fstat-num">8+</span>
+        <span class="fstat-label">CERTIFICATIONS</span>
+      </div>
+      <div class="footer-stat">
+        <span class="fstat-num">1</span>
+        <span class="fstat-label">AWARD WIN</span>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="footer-quote">
+      <p>"Piyush consistently delivers innovative tech, bridging gaps between ideas and real-world results."</p>
+      <span>— Tech Mentor</span>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span class="footer-left-name">Piyush Maurya</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-copy">© 2026 Built with passion &amp; precision</span>
+      </div>
+      <div class="footer-right-links">
+        <a href="mailto:Piyushmaurya6074@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/piyush-maurya/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/piyushmaurya6074" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
